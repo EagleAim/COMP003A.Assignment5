@@ -4,7 +4,6 @@
  * Purpouse: To show our ability with Methods and XML comments
  */
 
-using System.Transactions;
 
 namespace COMP003A.Assignment5
 {
@@ -32,20 +31,33 @@ namespace COMP003A.Assignment5
 
         static void IsoscelesTriangleBuilder(char inputCharecter, int size)
         {
+            Console.WriteLine("******************************************************");
+            Console.WriteLine("Triangle Section");
+            Console.WriteLine("******************************************************");
+
+
             Console.WriteLine("\n Please input ONE charecter");
-            string inputCharercter = Console.ReadLine();
+            
 
             Console.WriteLine("\n Please enter a positive whole number");
-            
-            int size = Console.ReadLine();
-            
-          
-            
-            
-            for (int i = 0; i < size; i++) 
-            { 
-                
+           
+           
+            for (int i = 1; i<=size ; i++)
+            {
+                for (int j = 1; j<=size; j++)
+                {
+                    Console.WriteLine($"{inputCharecter}");
+                }
             }
+
+            for (int i = 1;i<=size; i++)
+            {
+                for (int j = 1; j<=size-1; j++)
+                {
+                    Console.WriteLine($"{inputCharecter}");
+                }
+            }
+
         }
     }
 }
