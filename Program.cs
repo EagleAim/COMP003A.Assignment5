@@ -59,19 +59,20 @@ namespace COMP003A.Assignment5
 
         static void IsoscelesTriangleBuilder(char inputCharecter, int size)
         {
-            for (int i = 1; i <= size; i++)
+            int dividedSize = 2 / Convert.ToInt32(size);
+
+
+            for (int i = 1; i <= dividedSize; i++)
             {
-                for (int j = 1; j <= size; j++)
                 {
-                    Console.WriteLine($"{inputCharecter}");
+                    Console.WriteLine($"{inputCharecter}{i}");
                 }
             }
 
-            for (int i = 1; i <= size; i++)
+            for (int i = dividedSize - 1; i >= 1; i--)
             {
-                for (int j = 1; j <= size - 1; j++)
                 {
-                    Console.WriteLine($"{inputCharecter}");
+                    Console.WriteLine($"{inputCharecter}{i}");
                 }
             }
 
